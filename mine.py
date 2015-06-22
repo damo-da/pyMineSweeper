@@ -39,7 +39,7 @@ class theMineGame(object):
                 "7":"7.png",
                 "8":"8.png"}}
     preConfigured=False
-    def __init__(self, fullScreen=False,gameCellsCount=8,minesCount=40, gameSize=600,cellSize=70):
+    def __init__(self, fullScreen=False,gameCellsCount=8,minesCount=10, gameSize=600,cellSize=70):
 
         #changeable variables
         self.__gameSize=gameSize
