@@ -1,5 +1,7 @@
 # pyMinesweeper
 
+![Screenshot](/screenshot.png)
+
 We all know minesweeper. We all played minesweeper at one time in our life. 
 
 # Installation
