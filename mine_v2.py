@@ -35,17 +35,17 @@ fullscreen=0
 #images
 ###########################
 
-BombPic = pygame.image.load("Bomb.png")
-BoxPic = pygame.image.load("Box.png")
-HBoxPic=pygame.image.load("HighlightBox.png")
-FlagPic = pygame.image.load("Flag.png")
-UnminedPic = pygame.image.load("Unmined.png")
-CrossFlagPic = pygame.image.load("CrossFlag.png")
-CrushPic = pygame.image.load("Crush.PNG")
-BackgroundPic = pygame.image.load("BG.jpg")
+BombPic = pygame.image.load('images/'+"Bomb.png")
+BoxPic = pygame.image.load('images/'+"Box.png")
+HBoxPic=pygame.image.load('images/'+"HighlightBox.png")
+FlagPic = pygame.image.load('images/'+"Flag.png")
+UnminedPic = pygame.image.load('images/'+"Unmined.png")
+CrossFlagPic = pygame.image.load('images/'+"CrossFlag.png")
+CrushPic = pygame.image.load('images/'+"Crush.PNG")
+BackgroundPic = pygame.image.load('images/'+"BG.jpg")
 MineCountPic=[]
 for i in range(0,9):
-    Image=pygame.image.load(str(i)+".png")
+    Image=pygame.image.load('images/'+str(i)+".png")
     MineCountPic.append(Image)
 
 
@@ -190,7 +190,7 @@ def ExitGame():
     pygame.display.set_mode(mode,fullscreen,32)
     GREEN=(0,255,0)
     GameScreen.fill(GREEN)
-    GameScreen.blit(pygame.transform.scale(pygame.image.load("DAM.jpg"),mode),pygame.Rect(0,0,mode[0],mode[1]))
+    GameScreen.blit(pygame.transform.scale(pygame.image.load('images/'+"DAM.jpg"),mode),pygame.Rect(0,0,mode[0],mode[1]))
     Font=pygame.font.SysFont("Verdana",25,False,False)
     Text=Font.render("Dam Underscore",True,GREEN,BLACK)
     TextRect=Text.get_rect()

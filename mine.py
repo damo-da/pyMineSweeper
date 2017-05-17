@@ -153,18 +153,18 @@ class theMineGame(object):
     def __init_graphics(self):
         """Load images"""
 
-        bomb=pygame.image.load(theMineGame.imgSrc["bomb"])
+        bomb=pygame.image.load('images/'+theMineGame.imgSrc["bomb"])
         selectBox={"onClick":0,"onHover":0}
-        selectBox['onClick']=pygame.image.load(theMineGame.imgSrc["selectBox"]["onClick"])
-        selectBox['onHover']=pygame.image.load(theMineGame.imgSrc["selectBox"]["onHover"])
-        flag=pygame.image.load(theMineGame.imgSrc["flag"])
-        crossFlag=pygame.image.load(theMineGame.imgSrc["crossFlag"])
-        crush=pygame.image.load(theMineGame.imgSrc['crush'])
-        unmined=pygame.image.load(theMineGame.imgSrc['unmined'])
+        selectBox['onClick']=pygame.image.load('images/'+theMineGame.imgSrc["selectBox"]["onClick"])
+        selectBox['onHover']=pygame.image.load('images/'+theMineGame.imgSrc["selectBox"]["onHover"])
+        flag=pygame.image.load('images/'+theMineGame.imgSrc["flag"])
+        crossFlag=pygame.image.load('images/'+theMineGame.imgSrc["crossFlag"])
+        crush=pygame.image.load('images/'+theMineGame.imgSrc['crush'])
+        unmined=pygame.image.load('images/'+theMineGame.imgSrc['unmined'])
 
         num=[]
         for i in range(0,9):
-            num.append(pygame.image.load(theMineGame.imgSrc['num'][str(i)]))
+            num.append(pygame.image.load('images/'+theMineGame.imgSrc['num'][str(i)]))
 
         #now convert into aspect ratio
         boxSize=(self.__cellSize,self.__cellSize)
